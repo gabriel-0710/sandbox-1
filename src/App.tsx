@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import './App.css'
+import { LucasInput } from './LucasInput'
 import { Stack } from "@chakra-ui/react";
 
 type CountryType = {
@@ -14,6 +16,16 @@ function App() {
 
   return (
     <div className="App">
+      <Stack gap={4}>
+      <LucasInput title="nome" placeholder='insira o seu nome'/>
+      <LucasInput title="sobrenome" placeholder='insira o seu sobrenome'/>
+      <LucasInput title="telefone" placeholder='insira o seu telefone'/>
+      <LucasInput title="cep" placeholder='insira o seu cep'/>
+
+      <LucasInput title="valor definido" value='valorzinho'/>
+      </Stack>
+
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
